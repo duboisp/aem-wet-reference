@@ -1,54 +1,16 @@
 ---
-title: GCWeb Jekyll website example
+title: AEM-WET reference for testing purpose 
 ---
 
-<p>This is a simple website using the GCWeb Jekyll theme</p>
+<p>This is a simple website built with our GCWeb Jekyll theme. The site only contains theorical example to support the AEM implementation of WET/GCWeb</p>
 
-<h2>Minimum requirement</h2>
+<p>Not all example are listed bellow, you can navigate in our <a href="https://github.com/ServiceCanada/aem-wet-reference">Github repository</a> to find them all. </p>
+
 <ul>
-  <li>Create a <code>_config.yml</code></li>
-  <li>Define a layout globally or per page</li>
+  <li>Context specific feature
+    <ul>
+      <li><a href="component-content/context-specific-features/index.html">Ref. implementation</a></li>
+      <li>As implemented in AEM</li>
+    </ul>
+  </li>
 </ul>
-
-<h2>Site structure and minimalist content (With a default global layout)</h2>
-<dl>
-  <dt><code>_config.yml</code></dt>
-  <dd>
-    <pre><core># Remote theme, use the latest version
-remote_theme: wet-boew/gcweb-jekyll
-
-#
-# Page front matter defaults
-defaults:
-  - scope:
-      path: "" # Ensure it's applied to all pages
-    values:
-      layout: default</code></pre>
-  </dd>
-  <dt><code>index.html</code></dt>
-  <dd>
-    <pre><core>---
-title: GCWeb Jekyll website example
----
-
-&lt;p&gt;This is a simple website using the GCWeb Jekyll theme&lt;/p&gt;</code></pre>
-  </dd>
-</dl>
-
-<h2>Alternative site structure and minimalist content</h2>
-<dl>
-  <dt><code>_config.yml</code></dt>
-  <dd>
-    <pre><core># Remote theme, use the latest version
-remote_theme: wet-boew/gcweb-jekyll</code></pre>
-  </dd>
-  <dt><code>index.html</code></dt>
-  <dd>
-    <pre><core>---
-title: GCWeb Jekyll website example
-layout: default
----
-
-&lt;p&gt;This is a simple website using the GCWeb Jekyll theme&lt;/p&gt;</code></pre>
-  </dd>
-</dl>
