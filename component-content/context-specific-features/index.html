@@ -124,3 +124,69 @@ title: Context specific feature - Test examples
 	</div>
 </div>
 
+<h1>HTML semantic expected once implemented</h1>
+
+<p>Required element and attribute are listed. Optional attribute/value was ommited.</p>
+<dl>
+	<dt><code>[text]</code></dt>
+	<dd>Plain text</dd>
+	<dt><code>[phrasing text]</code></dt>
+	<dd>HTML text that are limited to HTML phrasing content and may only contain <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#text-level-semantics">text level semantic</a></dd>
+	<dt><code>[URL-decoractive-image]</code></dt>
+	<dd>URL that point to an decorative image</dd>
+	<dt><code>[URL-web-page]</code></dt>
+	<dd>URL that point to a web page</dd>
+</dl>
+
+<p>3 features in 3 cols context</p>
+<pre><code>&lt;section class="gc-features">
+	&lt;h2>[text]&lt;/h2>
+	&lt;img alt="" src="[URL-decoractive-image]">
+	&lt;h3>&lt;a href="[URL-web-page]">[phrasing text]&lt;/a>&lt;/h3>
+	&lt;p>[phrasing text]&lt;/p>
+	&lt;img alt="" src="[URL-decoractive-image]">
+	&lt;h3>&lt;a href="[URL-web-page]">[phrasing text]&lt;/a>&lt;/h3>
+	&lt;p>[phrasing text]&lt;/p>
+	&lt;img alt="" src="[URL-decoractive-image]">
+	&lt;h3>&lt;a href="[URL-web-page]">[phrasing text]&lt;/a>&lt;/h3>
+	&lt;p>[phrasing text]&lt;/p>
+&lt;/section></code></pre>
+
+<p>2 features in 3 cols context</<p>
+<pre><code>&lt;section class="gc-features">
+	&lt;h2>[text]&lt;/h2>
+	&lt;img alt="" src="[URL-decoractive-image]">
+	&lt;h3>&lt;a href="[URL-web-page]">[phrasing text]&lt;/a>&lt;/h3>
+	&lt;p>[phrasing text]&lt;/p>
+	&lt;img alt="" src="[URL-decoractive-image]">
+	&lt;h3>&lt;a href="[URL-web-page]">[phrasing text]&lt;/a>&lt;/h3>
+	&lt;p>[phrasing text]&lt;/p>
+&lt;/section></code></pre>
+
+<p>1 features in 3 cols context</<p>
+<pre><code>&lt;section class="gc-features">
+	&lt;h2>[text]&lt;/h2>
+	&lt;img alt="" src="[URL-decoractive-image]">
+	&lt;h3>&lt;a href="[URL-web-page]">[phrasing text]&lt;/a>&lt;/h3>
+	&lt;p>[phrasing text]&lt;/p>
+&lt;/section></code></pre>
+
+
+<p>2 features in 2 cols context</<p>
+<pre><code>&lt;section class="gc-features">
+	&lt;h2>[text]&lt;/h2>
+	&lt;img alt="" src="[URL-decoractive-image]">
+	&lt;h3>&lt;a href="[URL-web-page]">[phrasing text]&lt;/a>&lt;/h3>
+	&lt;p>[phrasing text]&lt;/p>
+	&lt;img alt="" src="[URL-decoractive-image]">
+	&lt;h3>&lt;a href="[URL-web-page]">[phrasing text]&lt;/a>&lt;/h3>
+	&lt;p>[phrasing text]&lt;/p>
+&lt;/section></code></pre>
+
+<p>1 features in 2 cols context</<p>
+<pre><code>&lt;section class="gc-features">
+	&lt;h2>[text]&lt;/h2>
+	&lt;img alt="" src="[URL-decoractive-image]">
+	&lt;h3>&lt;a href="[URL-web-page]">[phrasing text]&lt;/a>&lt;/h3>
+	&lt;p>[phrasing text]&lt;/p>
+&lt;/section></code></pre>
