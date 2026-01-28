@@ -1,0 +1,45 @@
+---
+title: Introduction block - Test examples
+---
+<div class="alert alert-warning">
+  <p>This for testing and represent the expected rendering.</p>
+</div>
+<p>Context: In a contained width</p>
+<style>
+/* Inline style to show the invisible h1 to web author */
+ h1.wb-inv {
+	clip-path: initial !important;
+	height: inherit !important;
+	margin: inherit !important;
+	opacity: .5;
+	outline: #555 dotted;
+	overflow: inherit !important;
+	position: static !important;
+	width: inherit !important;
+}
+
+ div:has(h1.wb-inv)::before {
+	content: "[Invisible when published] ";
+	font-size: 50%;
+}
+
+[lang=fr] div:has(h1.wb-inv)::before {
+	content: "[Invisible une fois publié] ";
+}
+
+div:has(h1.wb-inv):after {
+	content: " [This title will be hidden when published]";
+	font-size: 50%;
+}
+</style>
+
+
+<div>
+  <h1 class="wb-inv">Invisible heading level one</h1>
+</div>
+
+<div lang="fr"><div>
+  <h1 class="wb-inv">Titre invisible de niveau un</h1>
+</div></div>
+
+
